@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vote and feedback</title>
+    <link rel="stylesheet" type="text/css" href="feedback.css"/>
+    <nav>
+    <ul>
+    <li><a href="about me.html" >About me</a></li>
+    <li><a href="About CSGO.html">About CSGO</a></li>
+    <li><a href="my opinion.html">My opinion</a></li>
+    <li><a href="#" class="current">Feedback</a></li>
+    </ul>
+    </nav>
+  </head>
+  <body>
+<h1>Vote for your favourite game!</h1>
+<p id="vandf">
+</p>
+<form id="feedback" action="#">
+<fieldset>
+<legend>Vote and feedback</legend>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="Fname" name="first name"><br />
+  <label for="lastname">Last name:</label><br />
+  <input type="text" id="Lname" name="last name"><br />
+<label>Your favourite game:</label><br />
+    <input list="Games">
+    <datalist id="Games">
+      <option value="CSGO">
+      <option value="Call of Duty Mobile">
+      <option value="Vainglory">
+      <option value="PUBG Mobile">
+    </datalist><br />
+    <label>Feedback:</label><br />
+    <textarea style="weight: 400px;height:100px" id=Fback class="Fback" name="Feedback"></textarea>
+  </fieldset>
+  <input type="submit" onclick="myFunction()" value="Submit" />&nbsp;
+  </form>
+  <script>
+ function myFunction() {
+  confirm("Do you want to submit?");
+  alert("Your response has been submitted!")
+   console.log(result);
+}
+  </script>
+  </body>
+</html>
